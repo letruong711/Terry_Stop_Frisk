@@ -1,15 +1,16 @@
 
-# Phase 3 Project
+<h1 align="center"> Seattle Police Department's Racial Bias, Terry Stops, and Frisking </h1> <br>
+<p align="center">
+  
+# Background:
 
-Congratulations! You've made it through another _intense_ module, and now you're ready to show off your newfound Machine Learning skills!
+<p>When you talk about injustices, the topic of race forces itself into the forefront of most discussions. In recent times, due to the advancement of social media, civil injusticies have caught the attention of the public due increasing rates of police related deaths. As a result of social media exposure, these moments of police brutality have been captured and as a result, has been recognized by the public and local governments as a issue of racial injustice. As a life long Washingtonian, I wanted to investiage whether or not there is a racial bias here in the blue state of Washington. </br></p>
+<p>Using Seattle's Open Data Program, I was able to obtain data on Terry Stops from 2014 until September of this year. Using machine learning and exploratory analysis, and with a goal of using a model that would predict features of a subject, can we predict whether or not a subject will get frisked?</p>
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-3-project/main/images/smart.gif)
+<h3> Exploratory Findings:</h3>
+<ul style="list-style-type:circle;">
+  <li> Overall trend in Terry Stops in Seattle has been slowly decreasing over time. 
 
-All that remains in Phase 3 is to put your new skills to use with another large project! This project should take 20 to 30 hours to complete.
-
-## Project Overview
-
-For this project, you will engage in the full data science process from start to finish, solving a classification problem using a dataset of your choice.
 
 ### The Data
 
