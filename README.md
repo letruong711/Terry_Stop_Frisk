@@ -2,19 +2,30 @@
 <h1 align="center"> Seattle Police Department's Racial Bias, Terry Stops, and Frisking </h1> <br>
 <p align="center">
   
-# Background:
+### Background:
 
 <p>When you talk about injustices, the topic of race forces itself into the forefront of most discussions. In recent times, due to the advancement of social media, civil injusticies have caught the attention of the public due increasing rates of police related deaths. As a result of social media exposure, these moments of police brutality have been captured and as a result, has been recognized by the public and local governments as a issue of racial injustice. As a life long Washingtonian, I wanted to investiage whether or not there is a racial bias here in the blue state of Washington. </br></p>
 <p>Using Seattle's Open Data Program, I was able to obtain data on Terry Stops from 2014 until September of this year. Using machine learning and exploratory analysis, and with a goal of using a model that would predict features of a subject, can we predict whether or not a subject will get frisked?</p>
 
 <h3> Exploratory Findings:</h3>
 <ul style="list-style-type:circle;">
-  <li> Overall trend in Terry Stops in Seattle has been slowly decreasing over time. 
+  <li> Overall trend in Terry Stops in Seattle has been slowly decreasing over time.
+  <li> White subjects make up 66% of the census population in Seattle and are 51% of the Terry Stop population.
+  <li> Black subjects make up 7% of the census population but are 31% of the Terry Stop population.
+  <li> American Indian/Alaskan Native subjects make up less than 1% of the census population but are 3% of Terry Stop population.
+  <li> Male Subjects are three times likely to be stopped compared to female subjects.
+  <li> ~1/3 Terry Stops result in a frisk.
+  <li> White subjects are less likely to get frisked compared to other races.
 
+### Overview:
 
-### The Data
-
-You have the option to either **choose a dataset from a curated list** or **choose your own dataset _not on the list_**. The goal is to choose a dataset appropriate to the type of business problem and/or classification methods that most interests you. It is up to you to define a stakeholder and business problem appropriate to the dataset you choose. If you are feeling overwhelmed or behind, we recommend you choose dataset #2 or #3 from the curated list.
+Seattle Police Department (SPD), like other police departments across the country, has a long history of a generous use of force. Each officer has been trained to maintain the peace and enforce law by anymeans necessary. If they suspect illegal behavior, they have the right to stop a subject and perform a Terry Stop.
+    
+A **Terry Stop** is when an officer can stop and detain a subject based on suspcion of criminal behavior. If the officer suspects the subject to be armed or the officer feels like they are in danger, they have right to frisk the subject. 
+    
+Both stops must be justifiable under lawful and safety justifications. 
+    
+When looking at seeing whether we could predict when a Terry Stop subject was frisked, we looked at many features. We looked at the subject's characteristics (race, gender), the officer's characteristics (age, race, gender), and situational features (weapon type, stop resolution, call_type, etc). 
 
 If you choose a dataset from the curated list, **inform your instructor which dataset you chose** and jump right into the project. If you choose your own dataset, **run the dataset and business problem by your instructor for approval** before starting your project.
 
