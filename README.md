@@ -16,19 +16,18 @@
   <li> Male Subjects are three times likely to be stopped compared to female subjects.
   <li> ~1/3 Terry Stops result in a frisk.
   <li> White subjects are less likely to get frisked compared to other races.
+</ul>
 
 ### Overview:
 <p>Seattle Police Department (SPD), like other police departments across the country, has a long history of a generous use of force. Each officer has been trained to maintain the peace and enforce law by anymeans necessary. If they suspect illegal behavior, they have the right to stop a subject and perform a Terry Stop.
     
-A **Terry Stop** is when an officer can stop and detain a subject based on suspcion of criminal behavior. If the officer suspects the subject to be armed or the officer feels like they are in danger, they have right to frisk the subject. 
+A **Terry Stop** is when an officer can stop and detain a subject based on suspcion of criminal behavior. If the officer suspects the subject to be armed or the officer feels like they are in danger, they have right to frisk the subject. A **frisk** is a search that requires a justified stop. It involves patting of the subjects outer layer of clothing to make sure the subject isn't holding a concealed weapon.   
     
 Both stops must be justifiable under lawful and safety justifications. 
     
 When looking at seeing whether we could predict when a Terry Stop subject was frisked, we looked at many features. We looked at the subject's characteristics (race, gender), the officer's characteristics (age, race, gender), and situational features (weapon type, stop resolution, call_type, etc). 
 
-If you choose a dataset from the curated list, **inform your instructor which dataset you chose** and jump right into the project. If you choose your own dataset, **run the dataset and business problem by your instructor for approval** before starting your project.
-
-### Curated List of Datasets
+### Results
 
 You may select any of the four datasets below - we provide brief descriptions of each. Follow the links to learn more about the dataset and business problems before making a final decision.
 
