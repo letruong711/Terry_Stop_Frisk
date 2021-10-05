@@ -27,7 +27,13 @@ Both stops must be justifiable under lawful and safety justifications.
     
 When looking at seeing whether we could predict when a Terry Stop subject was frisked, we looked at many features. We looked at the subject's characteristics (race, gender), the officer's characteristics (age, race, gender), and situational features (weapon type, stop resolution, call_type, etc). 
 
-### Results
+### Methods
+
+Using Pandas, Numpy, Seaborn, Matplotlib, and Sklearn, we were able to create multiple models to help us identify what factors could help us predict a frisk.
+
+The models we used were multiclass classification models. They were created with Logistric Regression, K-Nearest Neighbors (KNN), Support Vector Machines (SVM), Decision Tree, and Random Forest. 
+  
+We created a function that would give us the accuracy score for 
 
 You may select any of the four datasets below - we provide brief descriptions of each. Follow the links to learn more about the dataset and business problems before making a final decision.
 
