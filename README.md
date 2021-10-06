@@ -5,20 +5,21 @@
   
 ### Background:
 
-<p>When you talk about injustices, the topic of race forces itself into the forefront of most discussions. In recent times, due to the advancement of social media, civil injusticies have caught the attention of the public due increasing rates of police related deaths. As a result of social media exposure, these moments of police brutality have been captured and as a result, has been recognized by the public and local governments as a issue of racial injustice. As a life long Washingtonian, I wanted to investiage whether or not there is a racial bias here in the blue state of Washington. </br></p>
-<p>Using Seattle's Open Data Program, I was able to obtain data on Terry Stops from 2014 until September of this year. Using machine learning and exploratory analysis, and with a goal of using a model that would predict features of a subject, can we predict whether or not a subject will get frisked?</p>
+When you talk about injustices, the topic of race forces itself into the forefront of most discussions. In recent times, due to the advancement of social media, civil injusticies have caught the attention of the public due increasing rates of police related deaths. As a result of social media exposure, these moments of police brutality have been captured and as a result, has been recognized by the public and local governments as a issue of racial injustice. As a life long Washingtonian, I wanted to investiage whether or not there is a racial bias here in the blue state of Washington. </br></p>
+Using Seattle's Open Data Program, I was able to obtain data on Terry Stops from 2014 until September of this year. Using machine learning and exploratory analysis, and with a goal of using a model that would predict features of a subject, can we predict whether or not a subject will get frisked?</p>
 
-<h3> Exploratory Findings:</h3>
-<ul style="list-style-type:circle;">
-  <li> Overall trend in Terry Stops in Seattle has been slowly decreasing over time.
-![](\images/Stops_per_Month.png)
+# Exploratory Findings
 
-  <li> White subjects make up 66% of the census population in Seattle and are 51% of the Terry Stop population.
-  <li> Black subjects make up 7% of the census population but are 31% of the Terry Stop population.
-  <li> American Indian/Alaskan Native subjects make up less than 1% of the census population but are 3% of Terry Stop population.
-  <li> Male Subjects are three times likely to be stopped compared to female subjects.
-  <li> ~1/3 Terry Stops result in a frisk.
-  <li> White subjects are less likely to get frisked compared to other races.
+  * Overall trend in Terry Stops in Seattle has been slowly decreasing over time.
+![](images/StopsperMonth.png)
+  * White subjects make up 66% of the census population in Seattle and are 51% of the Terry Stop population.
+  * Black subjects make up 7% of the census population but are 31% of the Terry Stop population.
+  * American Indian/Alaskan Native subjects make up less than 1% of the census population but are 3% of Terry Stop population.
+![](images/CensusRaceComparison.png)
+  * Male Subjects are three times likely to be stopped compared to female subjects.
+  * ~1/3 Terry Stops result in a frisk.
+  * White subjects are less likely to get frisked compared to other races.
+![](images/RacesandFrisking.png)
 </ul>
 
 ### Overview:
@@ -42,6 +43,10 @@ We created a function that would give us the accuracy score for the above models
   
 By running the function and then inputing our data into a Confusion Matrix, we were able to see that using an SVM model gave us an 83% accuracy rating with 79% precision but a 30% recall. Using a RandomForest Classifier, we were able to see the most important features to predicting a frisk were Officer Age, Stop Resolution, and Weapon Type. 
 
+![](images/ConfusionMatrix.png)
+![](images/ClassificationReport.jpg)
+![](images/FeatureImportance.png)
+  
 ### Conclusions
   
 With an 83% percent accuracy rate and 79% precsion rate, we can say our model can help us get an idea of when a frisk can be made. It showed us that while there is a racial bias, when a terry stop is made and a frisk is happening, race doesn't matter. Our top features were an officer's age, the stop resolution, and weapon type. When looking at the most important futures to our model, we notice that it would be difficult to create an algorithm to predict a frisk and that is reflected with our 30% recall. Officer Age is plays an important role beacuse experience matters when you're out in the field; An experienced officer will react differntly to a situation than a newer officer on the field. This shows us that a frisk depends on the subjectivity of the officer during the time of the Terry Stop. We cannot accurately predict subjectivity especially since we don't have all the information about the situation. We don't know if the officer has any subconscious bias or any preconceived idea of what is going to happen when a stop has been made. We also don't know if the subject themselves were dangerous or not.
