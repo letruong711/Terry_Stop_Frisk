@@ -11,7 +11,7 @@
 <h3> Exploratory Findings:</h3>
 <ul style="list-style-type:circle;">
   <li> Overall trend in Terry Stops in Seattle has been slowly decreasing over time.
-    ![](Terry_Stop_Frisk/images/Stops_per_Month.png)
+![](\images/Stops_per_Month.png)
 
   <li> White subjects make up 66% of the census population in Seattle and are 51% of the Terry Stop population.
   <li> Black subjects make up 7% of the census population but are 31% of the Terry Stop population.
