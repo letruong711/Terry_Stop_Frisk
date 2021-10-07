@@ -8,7 +8,7 @@
 When you talk about injustices, the topic of race forces itself into the forefront of most discussions. In recent times, due to the advancement of social media, civil injustices have caught the attention of the public due increasing rates of police related deaths. As a result of social media exposure, these moments of police brutality have been captured and as a result, has been recognized by the public and local governments as a issue of racial injustice. As a life long Washingtonian, I wanted to investigate whether or not there is a racial bias here in the blue state of Washington. </br></p>
 Using Seattle's Open Data Program, I was able to obtain data on Terry Stops from 2014 until September of this year. Using machine learning and exploratory analysis, and with a goal of using a model that would predict features of a subject, can we predict whether or not a subject will get frisked?</p>
 
-### Overview:
+# Overview:
 <p>Seattle Police Department (SPD), like other police departments across the country, has a long history of a generous use of force. Each officer has been trained to maintain the peace and enforce law by anymeans necessary. If they suspect illegal behavior, they have the right to stop a subject and perform a Terry Stop.
     
 A **Terry Stop** is when an officer can stop and detain a subject based on suspcion of criminal behavior. If the officer suspects the subject to be armed or the officer feels like they are in danger, they have right to frisk the subject. A **frisk** is a search that requires a justified stop. It involves patting of the subjects outer layer of clothing to make sure the subject isn't holding a concealed weapon.   
@@ -31,7 +31,7 @@ When looking at seeing whether we could predict when a Terry Stop subject was fr
 ![](images/RacesandFrisking.png)
 </ul>
   
-### Methods
+# Methods
   
 Using Pandas, Numpy, Seaborn, Matplotlib, and Sklearn, we were able to create multiple models to help us identify what factors could help us predict a frisk. We used StandardScaler to scale and normalize the data. We encode the data using OneHotEncoder to convert our categorical data variables to help improve our predictions. Afterwards, we split our data into a train and test group and used a 20% testing size. 
 
@@ -39,7 +39,7 @@ The models we used were multiclass classification models. They were created with
   
 We created a function that would give us the accuracy score for the above models. After we ran the function for our models, we were giving accuracy percentages to see how accurate they were. 
   
-### Results
+# Results
   
 By running the function and then inputing our data into a Confusion Matrix, we were able to see that using an SVM model gave us an 83% accuracy rating with 79% precision but a 30% recall. Using a RandomForest Classifier, we were able to see the most important features to predicting a frisk were Officer Age, Stop Resolution, and Weapon Type. 
 
@@ -47,13 +47,13 @@ By running the function and then inputing our data into a Confusion Matrix, we w
 ![](images/ClassificationReport.jpg)
 ![](images/FeatureImportance.png)
   
-### Conclusions
+# Conclusions
   
 With an 83% percent accuracy rate and 79% precsion rate, we can say our model can help us get an idea of when a frisk can be made. It showed us that while there is a racial bias, when a terry stop is made and a frisk is happening, race doesn't matter. Our top features were an officer's age, the stop resolution, and weapon type. When looking at the most important futures to our model, we notice that it would be difficult to create an algorithm to predict a frisk and that is reflected with our 30% recall. Officer Age is plays an important role beacuse experience matters when you're out in the field; An experienced officer will react differntly to a situation than a newer officer on the field. This shows us that a frisk depends on the subjectivity of the officer during the time of the Terry Stop. We cannot accurately predict subjectivity especially since we don't have all the information about the situation. We don't know if the officer has any subconscious bias or any preconceived idea of what is going to happen when a stop has been made. We also don't know if the subject themselves were dangerous or not.
 
 While have evidence to support a frisk is subjective and situational, we must also mention that our data came with a lot of missing data that could have impacted our results. 
   
-### Future Steps
+# Future Steps
 
 While our data came with a decent accuracy and precision score, our recall left more to be desired. However, as stated previously, it is difficult to predict a frisk as it is situational and dependant on the subjectivity of the officer. If Seattle's Open Data policy allows, hopefully we are able to expand on the timeframe of this data to see if there are patterns in the frisks to help us improve our recall score. There should hopefully also be policy changes to help improve how much missing data is reported and acceptable. If this is changed, our recall percentage could improve. 
   
