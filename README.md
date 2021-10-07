@@ -8,6 +8,15 @@
 When you talk about injustices, the topic of race forces itself into the forefront of most discussions. In recent times, due to the advancement of social media, civil injustices have caught the attention of the public due increasing rates of police related deaths. As a result of social media exposure, these moments of police brutality have been captured and as a result, has been recognized by the public and local governments as a issue of racial injustice. As a life long Washingtonian, I wanted to investigate whether or not there is a racial bias here in the blue state of Washington. </br></p>
 Using Seattle's Open Data Program, I was able to obtain data on Terry Stops from 2014 until September of this year. Using machine learning and exploratory analysis, and with a goal of using a model that would predict features of a subject, can we predict whether or not a subject will get frisked?</p>
 
+### Overview:
+<p>Seattle Police Department (SPD), like other police departments across the country, has a long history of a generous use of force. Each officer has been trained to maintain the peace and enforce law by anymeans necessary. If they suspect illegal behavior, they have the right to stop a subject and perform a Terry Stop.
+    
+A **Terry Stop** is when an officer can stop and detain a subject based on suspcion of criminal behavior. If the officer suspects the subject to be armed or the officer feels like they are in danger, they have right to frisk the subject. A **frisk** is a search that requires a justified stop. It involves patting of the subjects outer layer of clothing to make sure the subject isn't holding a concealed weapon.   
+    
+Both stops must be justifiable under lawful and safety justifications. 
+    
+When looking at seeing whether we could predict when a Terry Stop subject was frisked, we looked at many features. We looked at the subject's characteristics (race, gender), the officer's characteristics (age, race, gender), and situational features (weapon type, stop resolution, call_type, etc). 
+
 # Exploratory Findings
 
   * Overall trend in Terry Stops in Seattle has been slowly decreasing over time.
@@ -21,16 +30,7 @@ Using Seattle's Open Data Program, I was able to obtain data on Terry Stops from
   * White subjects are less likely to get frisked compared to other races.
 ![](images/RacesandFrisking.png)
 </ul>
-
-### Overview:
-<p>Seattle Police Department (SPD), like other police departments across the country, has a long history of a generous use of force. Each officer has been trained to maintain the peace and enforce law by anymeans necessary. If they suspect illegal behavior, they have the right to stop a subject and perform a Terry Stop.
-    
-A **Terry Stop** is when an officer can stop and detain a subject based on suspcion of criminal behavior. If the officer suspects the subject to be armed or the officer feels like they are in danger, they have right to frisk the subject. A **frisk** is a search that requires a justified stop. It involves patting of the subjects outer layer of clothing to make sure the subject isn't holding a concealed weapon.   
-    
-Both stops must be justifiable under lawful and safety justifications. 
-    
-When looking at seeing whether we could predict when a Terry Stop subject was frisked, we looked at many features. We looked at the subject's characteristics (race, gender), the officer's characteristics (age, race, gender), and situational features (weapon type, stop resolution, call_type, etc). 
-
+  
 ### Methods
   
 Using Pandas, Numpy, Seaborn, Matplotlib, and Sklearn, we were able to create multiple models to help us identify what factors could help us predict a frisk. We used StandardScaler to scale and normalize the data. We encode the data using OneHotEncoder to convert our categorical data variables to help improve our predictions. Afterwards, we split our data into a train and test group and used a 20% testing size. 
